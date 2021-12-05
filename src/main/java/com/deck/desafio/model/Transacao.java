@@ -1,6 +1,7 @@
 package com.deck.desafio.model;
 
 import com.deck.desafio.model.mapped.Vivo;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(callSuper = false)
 @RequiredArgsConstructor
 @Entity
+@Builder
 public class Transacao extends Vivo {
 
     @Id

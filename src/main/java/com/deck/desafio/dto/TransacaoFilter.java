@@ -2,12 +2,14 @@ package com.deck.desafio.dto;
 
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Data
 public class TransacaoFilter {
     Integer page;
     Integer size;
-    String name;
-    String address;
-    String email;
-    Boolean active;
+    Long idTransacao;
+    Long idConta;
+    LocalDate startTime;
+    LocalDate endTime;
 }
